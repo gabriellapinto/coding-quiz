@@ -1,12 +1,14 @@
-/*importing google font*/
+/* importing google font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
+/* universal styles */
 * {
     box-sizing: border-box;
     margin: 0;
     font-family: "Poppins", sans-serif;
     padding: 0;
 }
+
 body {
     display: flex;
     width: 100vw;
@@ -17,6 +19,7 @@ body {
     background-color: #ac9efc;
 }
 
+/* landing page styles */
 h3 {
     margin: 10px 0px;
 }
@@ -36,12 +39,14 @@ h3 {
     box-shadow: 0 0 10px 2px;
 
 }
+
 .buttonArea {
     display: grid;
     grid-template-columns: repeat(2,auto);
     gap: 10px;
     margin: 20px 0;
 }
+
 button {
     --hue:var(--hue-neutral);
     border: 1px solid grey;
@@ -51,9 +56,11 @@ button {
     color: white;
     outline: none;
 }
+
 button:hover {
     border-color: black;
 }
+
 .start {
     font-size: 1.5rem;
     font-weight: bold;
@@ -61,13 +68,58 @@ button:hover {
     margin: 10px 0px;
 
 }
+
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+/* hides certain objects */
 .hide {
     display: none;
 }
 
+/* score styling */
+.scoresList {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0.3rem 0 ;
+
+}
+
+#highscoresList {
+    margin: 1rem 0;
+}
+
+#scoreArea {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
+}
+
+#init {
+    margin-top: 0.7rem;
+}
+
+#initials {
+    margin: 0.3rem;
+}
+
+#save-btn {
+    margin: 0.7rem;
+}
+
+#showScoresButton {
+    margin-top: 0.3rem;
+}
+
+/* media query for screen adjustment */
+@media only screen and (max-width:768px) {
+    .buttonArea{
+        display: grid;
+        grid-template-columns: none;
+        gap: 10px;
+        margin: 20px 0;
+    }
+}
