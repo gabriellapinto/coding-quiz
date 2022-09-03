@@ -8,24 +8,30 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div id="wrapper">
-        <!--landing page content-->
-        <div id="startingPage">
+    <main class="quizArea">
+        <header class="mainHeader">
             <h1>Coding Quiz!</h1>
-            <p>Answer the following questions within the time limit. Incorrect answers
-                will penalize your score and time!</p>
-            <button id="startTime">Start Quiz</button>
+            <span id="timerArea"></span>
+        </header>
+        <section id="questionsContainer" class="hide">
+            <div id="question"></div>
+            <div id="answers" class="buttonArea"></div>
+        </section>
+        <section class="scores">
+            <div id="scoreArea" class="hide"></div>
+        </section>
+        <section class="controls">
+            <button class="start" id="startButton">START</button>
+            <button class="btn" id="showScoresButton">See High Scores</button>
+        <br/>
+        <div id="scoreArea" class="hide">
+            <span id="scoreDisplay"></span>
+            <input type="text" name="initials" id="initials">
+            <button id="submitScore" class="submit">Submit Score</button>
         </div>
-        <!--timer div-->
-        <div id="currentTime"></div>
-    </div>
-    <!--link to highscores html-->
-    <a href="highscores.html">View Highscores</a>
-
-
-
-
-
+    </main>
+    </section>
+<!--link to javascript file-->
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
